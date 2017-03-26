@@ -1,0 +1,125 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel|Marcellus+SC|Roboto);
+
+body {
+background-color: #ECEFF1;
+margin: 0;
+font-family: Cinzel;
+--main-color: #2495B2;
+}
+
+.topHeader {
+background: var(--main-color);
+padding: 12px 20px;
+box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+
+}
+
+
+h1 {
+color: white;
+padding-bottom: 8px;
+border-bottom: solid 2px currentColor;
+margin-top: 0;
+}
+
+.actionButton {
+width: 50px;
+height: 50px;
+padding: none;
+border-radius: 50%;
+border: 0;
+background-color: #FF4081;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+font-size: 30px;
+color: white;
+}
+
+.buttonIcon {
+
+}
+
+.killButton {
+	margin-left: 24px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.inputRow {
+display: flex;
+align-items: center;
+}
+
+#nameInput {
+margin-right: 10px;
+font-size: 21px;
+padding: 6px 12px;
+}
+
+#list {
+list-style: none;
+margin: 20px;
+padding: 20px 20px;
+width: 400px;
+}
+
+li {
+padding: 5px 0;
+display: flex;
+align-items: center;
+font-size: 21px;
+font-family: Marcellus SC;
+}
+
+li input {
+width: 50px;
+height: 30px;
+text-align: center;
+font-size: 21px;
+padding: 0px 8px;
+background: transparent;
+border: 0;
+border-bottom: solid 1px var(--main-color);
+}
+
+li span {
+display: inline-block;
+width: 120px;
+text-align: left;
+overflow: hidden;
+margin: 0px 30px;
+text-overflow: ellipsis;
+flex-grow: 1;
+}
+
+li.dead span {
+	text-decoration: line-through;
+}
+
+.current {
+	background: red;
+}
+
+.roundRow {
+	display: flex;
+	align-items: center;
+	
+}
+
+.rounds {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+#nextButton {
+	background: #1DBF87;
+	margin-left: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}

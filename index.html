@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Nanush's Combat-Tracker </title>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+ <link href="style.css"
+      rel="stylesheet">
+</head>
+<body> 
+	<header class="topHeader">
+		<h1>Nanush's Combat Tracker</h1>
+		<div class="inputRow">
+			<input placeholder="Name" id="nameInput"/>
+			<button type="button" id="addButton" class="actionButton"> <i class="material-icons buttonIcon">add</i> </button>
+		</div>
+	</header>
+
+	<ul id="list"></ul> 
+	<div class="listTitle"></div>
+	<div class="roundRow">
+	<button type="button" id="nextButton" class="actionButton"><i class="material-icons">play_arrow</i></button>
+	<span class="rounds">
+	Round: <span id="roundCount">0</span>
+	</span>
+	</div>
+	
+	<script src="app.js"></script>
+</body>
+
+</html>

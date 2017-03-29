@@ -19,14 +19,29 @@ const list = document.getElementById('list');
 	 initInput.type = 'number';
 	 initInput.classList.add('initInput');
 	 const textEl = document.createElement('span');
+	 textEl.classList.add('textEl');
 	 const hpInput = document.createElement('input');
+	 hpInput.classList.add('hpInput');
 	 const acInput = document.createElement('input');
+	 acInput.classList.add('acInput');
 	 const killButton = document.createElement('img');
 	 killButton.src = 'skull.svg';
 	 killButton.classList.add('killButton');
 	 killButton.addEventListener('click', function () {
 		 li.classList.add('dead');
 	 });
+	 const copyButton = document.createElement('img');
+	 copyButton.src = 'copy.svg';
+	 copyButton.classList.add('copyButton');
+	 copyButton.addEventListener('click', function () {
+		 const newRow = addRow(); 
+		 newRow.querySelector('.initInput').value = this.parentNode.querySelector('.initInput').value;
+		 newRow.querySelector('.textEl').textContent = this.parentNode.querySelector('.textEl').textContent;
+		 newRow.querySelector('.hpInput').value = this.parentNode.querySelector('.hpInput').value;
+		 newRow.querySelector('.acInput').value = this.parentNode.querySelector('.acInput').value;
+	 
+	 });
+	 
 	 hpInput.type = 'number';
 	 acInput.type = 'number';
      textEl.textContent = nameInput.value;
@@ -36,8 +51,10 @@ const list = document.getElementById('list');
 	 li.appendChild(hpInput);
 	 li.appendChild(acInput);
 	 li.appendChild(killButton);
+	 li.appendChild(copyButton);
 	 nameInput.value = '';
-   }
+	 return li;
+   };
   
   let currentRound = 1;
   const nextButton = document.getElementById('nextButton');

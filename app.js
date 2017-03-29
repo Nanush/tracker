@@ -35,7 +35,6 @@ const list = document.getElementById('list');
 	 copyButton.classList.add('copyButton');
 	 copyButton.addEventListener('click', function () {
 		 const newRow = addRow(); 
-		 newRow.querySelector('.initInput').value = this.parentNode.querySelector('.initInput').value;
 		 newRow.querySelector('.textEl').textContent = this.parentNode.querySelector('.textEl').textContent;
 		 newRow.querySelector('.hpInput').value = this.parentNode.querySelector('.hpInput').value;
 		 newRow.querySelector('.acInput').value = this.parentNode.querySelector('.acInput').value;
